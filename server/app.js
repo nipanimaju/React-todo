@@ -33,5 +33,5 @@ mongoose.connect(`mongodb+srv://testconnect:testconnect@cluster0.suzcz.mongodb.n
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/todos", todosRouter);
-app.listen(3000, () => console.log(`Server running on port 3000`))
+app.listen(process.env.PORT || 3000)
 module.exports = app;
