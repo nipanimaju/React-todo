@@ -33,7 +33,7 @@
     "node": "14.4.0",
     "npm": "6.14.5"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://pawel-todo-app.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
