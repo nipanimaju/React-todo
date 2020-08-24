@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 const todosRouter = require("./routes/todos");
 
 var app = express()
-
+const port = process.env.PORT || 3001;
 app.use(logger('dev'));
 app.use(cors());
 app.use(express.json());
