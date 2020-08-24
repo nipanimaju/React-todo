@@ -38,3 +38,8 @@ exports.deleteTodo = async (req, res, next) => {
         next(e);
       }
     };
+    exports.updateTodo = async (req, res, next) => {
+      const todo = await Todo.findByIdAndUpdate(req.params.id, req.body);
+      res.status(203).send(todo);
+  }
+

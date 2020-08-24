@@ -17,7 +17,9 @@ class TodoContainer extends React.Component {
         isLoading: false,
         showStats: false
     }
+  
     componentDidMount() {
+      
       axios.get(link)
           .then(
               response => { let data = response.data 
@@ -34,10 +36,23 @@ class TodoContainer extends React.Component {
           }
           return todo;
       })
-      // console.log(updatedTodosArr);
       this.setState( {
           todos: updatedTodosArr
       } );
+      axios.put(`${link}/${_id}`, {completed: true} )
+          .then(
+              response => {  
+                axios.get(link)
+          .then(
+              response => { let data = response.data 
+              this.setState({
+                todos: data,
+                isLoading:false
+              })} 
+          );
+                } 
+          );
+      
   }
 
     deleteTodoHandler = (_id) => {

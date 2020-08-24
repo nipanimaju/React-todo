@@ -55,7 +55,7 @@ const TodoItem = (props) => {
             </span>
             
             <button onClick={() => props.deleteTodoHandler(props._id)}>Delete</button>
-            <Priority onChangeHandler={onChangeHandler} />
+            <Priority onChangeHandler={onChangeHandler}/>
         </li>
     )
 }
