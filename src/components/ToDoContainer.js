@@ -7,7 +7,7 @@ import Stats from "./Stats"
 import Footer from "./Footer"
 import axios from "axios";
 
-const link =  `http://${window.location.hostname}:3001/todos`;
+const link =  `https://${window.location.hostname}:3001/todos`;
 // class component
 class TodoContainer extends React.Component {
 
