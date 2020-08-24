@@ -15,8 +15,8 @@ app.use(logger('dev'));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'server')));
+// app.use(cookieParser());
+app.use(express.static(path.join(__dirname, '../build')));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
@@ -30,8 +30,8 @@ mongoose.connect(`mongodb+srv://testconnect:testconnect@cluster0.suzcz.mongodb.n
   useUnifiedTopology: true
 });
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
 app.use("/todos", todosRouter);
 app.listen(process.env.PORT || 3001, '0.0.0.0', function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
