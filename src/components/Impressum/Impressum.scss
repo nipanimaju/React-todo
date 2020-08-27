@@ -1,0 +1,11 @@
+.impressum {
+    width: 50vw;
+    text-align: left;
+    display: block;
+    @media (max-width: 768px) {
+        width: 80vw;
+      }
+    p {
+          margin-top: 20px;
+      }
+}

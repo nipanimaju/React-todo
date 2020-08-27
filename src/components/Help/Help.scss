@@ -1,0 +1,9 @@
+.help {
+    width: 50vw;
+    @media (max-width: 768px) {
+        width: 80vw;
+      }
+    p {
+          margin-top: 20px;
+      }
+}

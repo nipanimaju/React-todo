@@ -1,13 +1,11 @@
 import React from 'react';
 
-const style = {
-  width: "50vw",
-}
+
 const Impressum = () => {
   return (
-    <div style={style} >
+    <div className="impressum" >
       <h1>Impressum</h1>
-      <p style={{marginTop:"20px"}}>
+      <p>
       Copyright © 2020 Pawel Zuchowski
         </p>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./TodoItem.scss";
 import Priority from "../Priority"
+import { Link } from "react-router-dom"
 
 const lowStyle = {
     opacity: "0.7"
@@ -51,7 +52,8 @@ const TodoItem = (props) => {
                 style= { priority === "Low"  ? lowStyle 
                 : priority === "High"  ? highStyle : null}
             >
-                {props.title}
+                <Link className="styleLink" to={`/${props._id}`}>{props.title}</Link>
+               
             </span>
             
             <button onClick={() => props.deleteTodoHandler(props._id)}>Delete</button>
