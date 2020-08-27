@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const style = {
-    width:"100%",
+    width:"50vw",
     display:"block",
     textAlign:"center",
     borderTop:"2px solid black",

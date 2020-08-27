@@ -4,7 +4,6 @@ import Header from "./Header";
 import Form from "./InputTodo"
 import DeleteAll from "./DeleteAll"
 import Stats from "./Stats"
-import Footer from "./Footer"
 import axios from "axios";
 
 const link =  `/todos`;
@@ -145,7 +144,6 @@ class TodoContainer extends React.Component {
                     }
                 </ul>
                 <DeleteAll deleteAll = {this.deleteAll} /> 
-                <Footer />
             </div>
         );
     }
