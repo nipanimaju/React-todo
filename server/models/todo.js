@@ -10,9 +10,8 @@ const Todoschema = new Schema({
     type: Boolean,
     required: true
   },
-  priority: {
+  comment: {
       type: String,
-      enum: ["low", "medium", "high"]
   }
 });
 

@@ -7,7 +7,7 @@ import Stats from "./Stats"
 import axios from "axios";
 
 const link =  `/todos`;
-// class component
+
 class TodoContainer extends React.Component {
 
     state = {
@@ -70,7 +70,8 @@ class TodoContainer extends React.Component {
       this.setState( { isLoading: true} );
       let newItemUpdate= {
         title: newItem,
-        completed: false
+        completed: false,
+        comment: ""
       } 
       axios.post(link, { ...newItemUpdate} )
           .then(
