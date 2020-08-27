@@ -12,6 +12,10 @@ const Todoschema = new Schema({
   },
   comment: {
       type: String,
+  },
+  time: { 
+    type : Date, 
+    default: Date.now
   }
 });
 

@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Help from "./components/Help/Help"
 import Impressum from "./components/Impressum/Impressum";
-import Footer from "./components/Footer/Footer"
 import ToDoDetail from "./components/TodoItem/ToDoDetail"
 import './App.scss';
 function App() {
@@ -18,7 +17,6 @@ function App() {
             <Route path="/help" exact component={Help} />
             <Route path="/:id" exact component={ToDoDetail} />
           </Switch>
-          <Footer />
       </div>
     </Router>
   );
