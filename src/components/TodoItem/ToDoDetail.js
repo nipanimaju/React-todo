@@ -37,6 +37,7 @@ const ToDoDetail = (props) => {
                   } 
             );
     }
+
     return (
 
         <div className="detail">
@@ -51,7 +52,7 @@ const ToDoDetail = (props) => {
                     </form>
                 </div>
                 <div className="wrapper">
-                    <div className="start"> <p>START: {task.time}</p> </div>
+                    <div className="start"> <p>START: {new Date(task.time).toLocaleString("en-US")}</p> </div>
                     <div className="end"> <p>END: 00:00:00</p> </div>
                     <div className="duration"> <p>TIME: 00:00:00</p> </div>
                 </div>
