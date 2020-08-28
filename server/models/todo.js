@@ -10,11 +10,18 @@ const Todoschema = new Schema({
     type: Boolean,
     required: true
   },
+  priority: {
+    type: String
+  },
   comment: {
       type: String,
   },
   time: { 
     type : Date, 
+    default: Date.now
+  },
+  endTime: {
+    type: Date,
     default: Date.now
   }
 });

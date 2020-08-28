@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./TodoItem.scss";
-import Priority from "../Priority"
+import Priority from "../Priority/Priority"
 import { Link } from "react-router-dom"
 
 const lowStyle = {
@@ -12,7 +12,6 @@ const highStyle = {
 
 const TodoItem = (props) => {
     const [priority, setPriority] = useState("")
-
     const onChangeHandler = (e) => {
         setPriority(e.target.value)
     }

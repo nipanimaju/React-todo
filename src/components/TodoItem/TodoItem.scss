@@ -8,4 +8,7 @@
   .styleLink {
     text-decoration: none;
     color: black;
+      &:hover {
+        color: #338EDA;
+      }
 }
