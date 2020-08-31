@@ -1,6 +1,7 @@
 import React from 'react';
 import  { Link } from "react-router-dom"
 import "./Nav.scss"
+import ThemeToggler from '../ThemeToggler';
 
 
 const Nav = () => {
@@ -10,6 +11,7 @@ const Nav = () => {
             <Link className="styleA" to='/'><li className="styleLi">Home</li></Link> 
             <Link className="styleA" to='/impressum'><li className="styleLi">Impressum</li></Link>
             <Link className="styleA" to='/help'><li className="styleLi">Help</li></Link>
+            <ThemeToggler></ThemeToggler>
         </ul>
     </nav>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import TodoItem from "./TodoItem/TodoItem";
 import Header from "./Header";
 import Form from "./InputTodo/InputTodo"
-import DeleteAll from "./DeleteAll"
+import DeleteAll from "./deleteAll/DeleteAll"
 import Stats from "./Stats"
 import axios from "axios";
 
@@ -39,7 +39,7 @@ class TodoContainer extends React.Component {
     this.setState({
       todos: updatedTodosArr
     });
-    axios.put(`${link}/${_id}`, { completed: true, endTime: new Date(Date.now) })
+    axios.put(`${link}/${_id}`, { completed: true, endTime: new Date() })
       .then(
         response => {
           axios.get(link)

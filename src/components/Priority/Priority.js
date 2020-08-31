@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Priority.scss"
+
 class Priority extends React.Component  {
-    
     render(){
     return(
     <select onChange={this.props.onChangeHandler} defaultValue={'DEFAULT'}>

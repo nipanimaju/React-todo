@@ -9,7 +9,6 @@ const lowStyle = {
 const highStyle = {
     fontWeight: "500"
 }
-
 const TodoItem = (props) => {
     const [priority, setPriority] = useState("")
     const onChangeHandler = (e) => {
@@ -57,6 +56,7 @@ const TodoItem = (props) => {
             
             <button onClick={() => props.deleteTodoHandler(props._id)}>Delete</button>
             <Priority onChangeHandler={onChangeHandler}/>
+            
         </li>
     )
 }
