@@ -10,7 +10,6 @@ import './App.scss';
 
 function App() {
   const themeStateHook = useState("light");
-
   return (
     <Router>
       <ThemeContext.Provider value={themeStateHook}>
